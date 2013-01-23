@@ -16,7 +16,7 @@ This plugin provides your Pimcore website with an RSS/Atom feed with an entry fo
 
 Open the Pimcore administration and click on the menu `Extras`, then `Download extensions`. Enter your Pimcore username and password and look for the RSS/Atom Feed in the list of plugins and click the Download icon on the right side.
 
-If you are not using the Pimcore installer, you can simply copy the Feed directory into Pimcore's plugins directory.
+If you are not using the Pimcore installer, you can simply place a directory named `Feed` with the code into Pimcore's `plugins` directory.
 
 After downloading Go to `Manage extensions` and click the `Install`-button for the RSS/Atom Feed.
 
