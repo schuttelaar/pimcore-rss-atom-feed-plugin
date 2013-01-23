@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+	<feedDefaultTitle>
+		<data>Title of website</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedDefaultTitle>
+	<feedDocumentBody>
+		<data>nameOfEditable</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedDocumentBody>
+	<feedBaseUrl>
+		<data>http://yourdomain.ext</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedBaseUrl>
+	 <feedLimit>
+		<data>25</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedLimit>
+	<feedDescription>
+		<data>Optional description of feed, only for RSS</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedDescription>
+	<feedAuthor>
+		<data>John Doe</data>
+		<type>text</type>
+		<siteId></siteId>
+	</feedAuthor>
+</zend-config>

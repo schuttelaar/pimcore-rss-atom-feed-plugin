@@ -1,0 +1,4 @@
+"feed_installed_successfully","Feed plugin installed successfully. Go to website settings to configure the feed."
+"feed_install_failed","Could not install Feed plugin. See log for more details."
+"feed_uninstalled_successfully","Successfully uninstalled Feed plugin. You can remove remaining website settings manually."
+"feed_uninstall_failed","Could not uninstall Feed plugin. See log for more details."

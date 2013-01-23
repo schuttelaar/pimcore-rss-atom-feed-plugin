@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+	<plugin>
+		<pluginName>Feed</pluginName>
+		<pluginDescription>
+			RSS/Atom feed for Pimcore documents
+		</pluginDescription>
+		<pluginNiceName>RSS/Atom Feed</pluginNiceName>
+		<pluginIcon>/plugins/Feed/static/img/feed.png</pluginIcon>
+		<pluginServer>plugins.pimcore.org</pluginServer>
+		<pluginVersion>1</pluginVersion>
+		<pluginRevision></pluginRevision>
+		<pluginBuildTimestamp></pluginBuildTimestamp>
+		<pluginClassName>Feed_Plugin</pluginClassName>
+		<pluginIncludePaths>
+			<path>/Feed/controllers</path>
+			<path>/Feed/models</path>
+		</pluginIncludePaths>
+		<pluginNamespaces>
+			<namespace>Feed</namespace>
+		</pluginNamespaces>
+		<pluginJsPaths>
+		</pluginJsPaths>
+		<pluginCssPaths>
+		</pluginCssPaths>
+	</plugin>
+</zend-config>
