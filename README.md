@@ -1,14 +1,16 @@
 # RSS/Atom Feed plugin for [Pimcore](http://www.pimcore.org/) #
 
+This [Pimcore plugin](http://www.pimcore.org/wiki/display/PIMCORE/Plugin+Anatomy+and+Design) is written in [PHP](http://php.net/manual/en/) and uses the [Zend Framework](http://framework.zend.com/manual/1.12/en/manual.html).
+
 This plugin provides your Pimcore website with an RSS/Atom feed with an entry for every [document](http://www.pimcore.org/wiki/display/PIMCORE/Documents) you create. This is useful for websites that are document based and regularly add new documents.
 
 ## Features ##
 
-* Supports both RSS and Atom feeds
-* Works for all Pimcore websites using documents
+* Supports both RSS and Atom feeds.
+* Works for all Pimcore websites using documents.
 * Easily configurable through Pimcore's website settings.
-* Ability to set your own routes for the feed
-* Ability to exclude pages from feed
+* Ability to set your own routes for the feed.
+* Ability to exclude pages from feed.
 
 ## Installation ##
 
@@ -40,7 +42,7 @@ For example if your documents have [WYSIWYG-editable](http://www.pimcore.org/wik
 
 The base URL should be the host name (domain) of your website. If you do not enter the *correct path* here the links in the RSS/Atom Feeds will not work!
 
-For example, if your website is www.fredsrecipes.com The value you enter here is `http://www.fredsrecipes.com` (no slash at the end)
+For example, if your website is www.fredsrecipes.ext The value you enter here is `http://www.fredsrecipes.ext` (no slash at the end)
 
 ### feedLimit ###
 
@@ -54,23 +56,27 @@ For example, if your name is Fred and you have website with recipes the descript
 
 ### feedAuthor ###
 
-Enter the name of the author of the documents here. If you leave the `feedAuthorz empty it will default to "`unknown`" because a value is required by the Atom specification.
+Enter the name of the author of the documents here. If you leave the `feedAuthor` empty it will default to "`unknown`" because a value is required by the Atom specification.
 
 ## Enabling the feed ##
 
-After entering the data you can access the feeds with a web browser at the following locations:
+After entering the data you can access the feeds with a web browser at the following paths:
 
 * /feed/atom
 * /feed/rss
 
 There are now two feeds that are basically the same. If you don't need the RSS-feed for any particular purpose, just stick to the Atom-feed.
 
-You can disable one of the feeds simply by going to `Static Routes` in the `Settings` menu and removing one of the static routes. You can change the static route if you need to have the feed available at another location for backwards compatibility.
+You can disable one of the feeds simply by going to `Static Routes` in the `Settings` menu and remove one of the static routes. You can change the static route if you need to have the feed available at another location for backwards compatibility.
 
 The final step is to include a link to your feed in the `<head>`-element of your website. Like said before, it is recommended that you only add the Atom-feed as this is more modern and widely supported:
 
-    <link href="/feed/atom" rel="alternate" type="application/atom+xml">
-    <link href="/feed/rss" rel="alternate" type="application/rss+xml">
+```html
+<link href="/feed/atom" rel="alternate" type="application/atom+xml">
+<link href="/feed/rss" rel="alternate" type="application/rss+xml">
+````
+
+For a standard Pimcore website you should add this in the file `/website/views/layouts/layout.php`
 
 ## Frequently asked questions ##
 
@@ -85,6 +91,9 @@ The plugin uses the document title from the "Settings" tab that every document h
 
 ### How do I prevent certain pages from appearing in the feed? ###
 By default all *published* documents appear in the feed. Forone not to appear in the feed you can add a [property](http://www.pimcore.org/wiki/display/PIMCORE/Properties) of the type `checkbox` with the name `showInFeed` to the document and leave the checkbox *unchecked*. To make the document appear in the feed again simply check the checkbox or remove the property.
+
+###In what language is this plugin available?###
+This plugin can be used with websites/documents of any language. UTF-8 encoding is used in the feeds. Installation messages (for administrators only) are available in English and Dutch.
 
 ## License ##
 
