@@ -1,0 +1,4 @@
+"feed_installed_successfully","Feed plugin succesvol geinstalleerd. Ga naar website instellingen om de feed to configureren."
+"feed_install_failed","Installatie van Feed plugin mislukt. Zie het log voor meer details."
+"feed_uninstalled_successfully","Feed plugin is verwijderd. Overgebleven website instellingen kunnen handmatig worden verwijderd."
+"feed_uninstall_failed","Verwijderen van plugin mislukt. Zie het log voor meer details."
